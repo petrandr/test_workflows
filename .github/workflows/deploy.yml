@@ -1,0 +1,17 @@
+name: Deployment to ECS
+
+on:
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: petros
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build new image
+    run: |
+          echo "Hello World"
