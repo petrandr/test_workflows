@@ -13,5 +13,7 @@ jobs:
     steps:
       - name: Build new image
         uses: actions/checkout@v3
+
+      - name: Test Run
         run: |
           echo "Hello World"
